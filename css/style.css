@@ -3,15 +3,24 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background: url("../materials/webBG.gif") center / cover no-repeat fixed;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    padding: 1px 20px 40px;
 }
 #header-title {
-    margin-top: 100px;
+    margin: 40px auto 24px;
     text-align: center;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    letter-spacing: 0.04em;
 }
 img {
     max-width: 100%;
@@ -21,7 +30,12 @@ img {
 /* PARENT OF ALL BODY PARTS */
 .main-div {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
     justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 .muscles-pic p{ /* This center all p tags that has muscle-pic class*/
     margin: 5px 0 0;
@@ -43,10 +57,9 @@ img {
     border-radius: 25px;
     border: 5px solid black;
     background-color: maroon;
-    width: 25%;
-    height: 33%;
+    width: min(100%, 500px);
     padding: 20px;
-    margin-right: 10px;
+    margin: 0;
 }
 .upper-layout summary { /* THE SUMMARY TAGS */
     cursor: pointer;
@@ -102,10 +115,9 @@ img {
     border-radius: 25px;
     border: 5px solid black;
     background-color: maroon;
-    width: 25%;
-    height: 33%;
+    width: min(100%, 500px);
     padding: 20px;
-    margin-right: 10px;
+    margin: 0;
 }
 .lower-layout summary {
     cursor: pointer;
@@ -146,7 +158,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, minmax(180px, 1fr));
     gap: 20px;
-    width: min(1000px, 90%);
+    width: min(1100px, 100%);
     margin: 30px auto;
     align-items: start;
 }
@@ -218,4 +230,25 @@ p {
     text-align: justify;
     text-indent: 20px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .upper-layout,
+    .lower-layout {
+        padding: 14px;
+    }
+
+    .ranger-layout {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ranger-card img {
+        max-height: none;
+    }
 }
