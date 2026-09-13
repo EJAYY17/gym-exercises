@@ -27,6 +27,7 @@ jobs:
       - name: Assemble website
         run: |
           mkdir -p _site
+          cp index.html _site/
           cp -R html css materials upper-body lower-body _site/
           touch _site/.nojekyll
 
