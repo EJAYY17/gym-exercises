@@ -1,0 +1,221 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url("../materials/webBG.gif") center / cover no-repeat fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#header-title {
+    margin-top: 100px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/* PARENT OF ALL BODY PARTS */
+.main-div {
+    display: flex;
+    justify-content: center;
+}
+.muscles-pic p{ /* This center all p tags that has muscle-pic class*/
+    margin: 5px 0 0;
+    text-align: center;
+    text-indent: 0;
+
+}
+.upper-layout .muscles-pic,
+.lower-layout .muscles-pic {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 48%;
+    box-sizing: border-box;
+}
+/* THIS PART IS FOR MUSCLES IN UPPER BODY */
+.upper-layout {
+    border-color: maroon;
+    border-radius: 25px;
+    border: 5px solid black;
+    background-color: maroon;
+    width: 25%;
+    height: 33%;
+    padding: 20px;
+    margin-right: 10px;
+}
+.upper-layout summary { /* THE SUMMARY TAGS */
+    cursor: pointer;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
+}
+/* BACK IMAGE */
+#back-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* CHEST IMAGE */
+#chest-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* BICEP IMAGE */
+#bicep-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* TRICEP IMAGE */
+#tricep-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* ABS IMAGE */
+#abs-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* SHOULDER IMAGE */
+#shoulder-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* THIS PART IS FOR MUSCLES IN LOWER BODY */
+.lower-layout {
+    border-color: maroon;
+    border-radius: 25px;
+    border: 5px solid black;
+    background-color: maroon;
+    width: 25%;
+    height: 33%;
+    padding: 20px;
+    margin-right: 10px;
+}
+.lower-layout summary {
+    cursor: pointer;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
+}
+/* QUADRICEPS IMAGE */
+#quadriceps-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* GLUTES IMAGE */
+#glutes-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* HAMSTRING IMAGE */
+#hamstring-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* CALVES IMAGE */
+#calves-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* POWER RANGER BOXES */
+.ranger-layout {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 20px;
+    width: min(1000px, 90%);
+    margin: 30px auto;
+    align-items: start;
+}
+.ranger-card {
+    border: 5px solid;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    align-self: start;
+}
+.ranger-card summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+}
+.ranger-card img {
+    display: block;
+    width: 100%;
+    max-height: 260px;
+    margin: 12px auto 0;
+}
+.black-ranger {
+    border-color: #202020;
+    background-color: rgba(20, 20, 20, 0.85);
+}
+.black-ranger summary {
+    background-color: #202020;
+}
+.blue-ranger {
+    border-color: #1769aa;
+    background-color: rgba(23, 105, 170, 0.75);
+}
+.blue-ranger summary {
+    background-color: #1769aa;
+}
+.red-ranger {
+    border-color: #b3261e;
+    background-color: rgba(179, 38, 30, 0.75);
+}
+.red-ranger summary {
+    background-color: #b3261e;
+}
+.green-ranger {
+    border-color: #238636;
+    background-color: rgba(35, 134, 54, 0.75);
+}
+.green-ranger summary {
+    background-color: #238636;
+}
+.yellow-ranger {
+    border-color: #d99a00;
+    background-color: rgba(217, 154, 0, 0.8);
+}
+.yellow-ranger summary {
+    background-color: #d99a00;
+    color: #171717;
+    text-shadow: none;
+}
+.pink-ranger {
+    border-color: #c2185b;
+    background-color: rgba(194, 24, 91, 0.75);
+}
+.pink-ranger summary {
+    background-color: #c2185b;
+}
+/* ALL P TAGS SHOULD INHERIT THIS */
+p {
+    text-align: justify;
+    text-indent: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

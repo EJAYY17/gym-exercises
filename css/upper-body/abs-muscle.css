@@ -1,0 +1,80 @@
+/* Abs muscle page styles */
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url("../../materials/webBG.gif") center / cover no-repeat fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    color: white;
+    background-color: maroon;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+/* TITLE */
+#header-title {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* PARENT OF ALL */
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ABS WORKOUT SECTIONS */
+.muscle-info {
+    width: 90%;
+    padding: 20px;
+    background-color: maroon;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.muscle-info summary {
+    cursor: pointer;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* EXERCISE PICTURES */
+.exercise-poses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.exercise-poses {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+    aspect-ratio: 1;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* ALL P TAGS SHOULD INHERIT THIS */
+p {
+    text-align: justify;
+    text-indent: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
